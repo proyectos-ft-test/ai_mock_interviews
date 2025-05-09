@@ -1,6 +1,6 @@
 /* import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
 import { z } from "zod";
-
+*/
 export const mappings = {
   "react.js": "react",
   reactjs: "react",
@@ -96,7 +96,7 @@ export const mappings = {
   vercel: "vercel",
   "aws amplify": "amplify",
 };
-
+/*
 export const interviewer: CreateAssistantDTO = {
   name: "Interviewer",
   firstMessage:
@@ -188,7 +188,7 @@ export const feedbackSchema = z.object({
   areasForImprovement: z.array(z.string()),
   finalAssessment: z.string(),
 });
-
+*/
 export const interviewCovers = [
   "/adobe.png",
   "/amazon.png",
@@ -203,4 +203,29 @@ export const interviewCovers = [
   "/tiktok.png",
   "/yahoo.png",
 ];
- */
+
+
+export const dummyInterviews: Interview[] = [
+  {
+    id: '1',
+    userId: 'user1', 
+    role: 'Frontend Developer', 
+    type: 'Mixing', 
+    techstack: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'], 
+    level: 'Junior', 
+    questions: ['What is React?'], 
+    finalized: false,
+    createdAt: '2024-03-15T10:00:00Z', 
+  }, 
+  {
+    id: '2',
+    userId: 'user2', 
+    role: 'Backend Developer', 
+    type: 'Technical', 
+    techstack: ['Github', 'Express', 'Mongo', 'Nuxt'], 
+    level: 'Senior', 
+    questions: ['What is Python?'], 
+    finalized: false,
+    createdAt: '2025-03-15T10:00:00Z', 
+  }
+]
